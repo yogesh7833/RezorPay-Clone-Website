@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+      .companiesList{
+        animation: 10s infinite linear moveCompany;
+      }
+      @keyframes moveCompany{
+        0%{
+          top: 0;
+        }
+        100%{
+          top: -50%;
+        }
+      }
+    </style>
+</head>
+<body class="min-w-fit">
+  <!-- Navigation Bar -->
+    <nav class="bg-deepBlue font-mullish">
+      <div class="relative w-[1080px] mx-auto flex items-center justify-between">
+        <!-- logo -->
+    
+        <a href="" class="cursor-pointer py-5 pr-5 flex">
+          <img src="./images/favicon.png" width="25px" height="3px" alt="">
+          <p class="font-bold text-white italic ">Razerpay</p>
+        </a>
+        <ul class="flex space-x-4">
+          <li class="text-white font-sans py-4 hover:text-[#2b84ea] cursor pointer transition-all duration-200 relative group hidden lg:block">
+            <a href="#">Payments</a>
+            <div class="absolute bottom-0 w-full h-1 bg-[#2b84ea] hidden group-hover:block transition-all duration-200"></div>
+          </li>
+          <li class="text-white hidden lg:block font-sans py-4 hover:text-[#2b84ea] cursor pointer transition-all duration-200 relative group">
+            <a href="#">Banking</a>
+            <div class="absolute bottom-0 w-full h-1 bg-[#2b84ea] hidden group-hover:block transition-all duration-200"></div>
+          </li>
+          <li class="text-white hidden lg:block font-sans py-4 hover:text-[#2b84ea] cursor pointer transition-all duration-200 relative group">
+            <a href="#">Corporate card</a>
+            <!-- <div class="absolute bottom-0 w-full h-1 bg-[#2b84ea] hidden group-hover:block transition-all duration-200"></div> -->
+          </li>
+          <li class="text-white hidden lg:block font-sans py-4 hover:text-[#2b84ea] cursor pointer transition-all duration-200 relative group">
+            <a href="#">Payroll</a>
+            <!-- <div class="absolute bottom-0 w-full h-1 bg-[#2b84ea] hidden group-hover:block transition-all duration-200"></div> -->
+          </li>
+          <li class="text-white hidden lg:block font-sans py-4 hover:text-[#2b84ea] cursor pointer transition-all duration-200 relative group">
+            <a href="#">Resources</a>
+            <div class="absolute bottom-0 w-full h-1 bg-[#2b84ea] hidden group-hover:block transition-all duration-200"></div>
+          </li>
+          <li class="text-white hidden lg:block font-sans py-4 hover:text-[#2b84ea] cursor pointer transition-all duration-200 relative group">
+            <a href="#">support</a>
+            <div class="absolute bottom-0 w-full h-1 bg-[#2b84ea] hidden group-hover:block transition-all duration-200"></div>
+          </li>
+          <li class="text-white hidden lg:block font-sans py-4 hover:text-[#2b84ea] cursor pointer transition-all duration-200 relative group">
+            <a href="#">pricing</a>
+            <div class="absolute bottom-0 w-full h-1 bg-[#2b84ea] hidden group-hover:block transition-all duration-200"></div>
+          </li>
+        </ul>
+        <div class="flex space-x-5">
+         <img src="./images/india-flag.svg" width="28px" height="20px" class="hidden lg:block" alt="">
+         <button class="py-2 px-5 font-mullish text-white border-lightBlue  border rounded-sm text-sm font-bold">Log in</button>
+         <button class="py-2 px-4 font-mullish text-lightBlue bg-white border-solid border  rounded-sm text-sm font-bold transition-all duration-200 hover:text-[#0b72e7] hidden lg:flex">Sing Up ></button>
+        </div>
+      </div>           
+    </nav>
+    <!-- Hero section  -->
+    <section class="relative bg-[#02042a] ">
+      <div class="w-10/12 max-w-[1080px] flex flex-col lg:flex-row justify-between items-center mx-auto">
+        <!-- left part  -->
+        <div class="space-y-7">
+          <h1 class="font-sans font-bold text-[40px]  leading-[1.2] text-white">power your finance, grow your business</h1>
+          <div class="w-6 h-1 bg-green-500"></div>
+          <p class="font-mullish text-[18px] leading-7 text-white opacity-70">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quam debitis animi commodi tempora at asperiores, deserunt sint </p>
+          <button class="bg-lightBlue py-[14px] px-[18px] text-white rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 ">Sign up Now</button>
+        </div>
+        <!-- right part -->
+        <img src="./images/hero-illustration.jpg" class="w-full max-w-[680px]">
+        
+      </div>
+       <!-- shap part -->
+       <div class="w-[100.06%] absolute left-0 right-0">
+        <img src="./images/hero-shape.svg" class="w-full object-fill " alt="">
+       </div>
+    </section>
+  <!-- feature section `1 -->
+  <section class="relative mt-[190px] overflow-hidden">
+    <img src="./images/feature-section1-dottedrows.png" alt="" loading="lazy" width="233" height="167" class="absolute -top-[8rem] left-[10rem] inline-block -z-10 hidden md:block">
+    <img src="./images/feature-section1-dottedrows.png" alt="" loading="lazy" class="absolute top-[4rem] right-0 inline-block rotate-180 hidden md:block">
+    <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
+      <!-- heading -->
+      <h2 class="font-sans text-center text-2xl leading-[1.2] font-extrabold hidden md:block">Accept Payments with Rozerpay Payments Suit</h2>
+      <h2 class="font-sans text-center text-5xl leading-[1.2] font-extrabold md:hidden">Explore Razorpay Payment Suit</h2>
+      <div class="w-6 h-1 bg-green-600 mx-auto mt-4 "></div>
+      <!-- content box -->
+      <div class="w-full min-h-[540px] bg-white flex rounded-md
+       relative p-10 py-5 border sm:items-center">
+          <!-- left -->
+        <div class="flex flex-col justify-between w-full ">
+            <h3 class="font-sans text-[28px] leading-10 font-bold max-w-[500px] hidden md:block">
+                Supercharge your business with all-powerful 
+                <span class="text-[#2b84ea]">Payments Gateway</span>
+            </h3>
+            <h3 class="font-sans text-[33px] leading-10 font-bold max-w-[500px] md:hidden">
+              Supercharge your business with all-powerful 
+              <span class="text-[#2b84ea]">Payments Gateway</span>
+            </h3>
+            <ul class="space-y-2">
+              <li class="font-sans flex items-center space-x-2">
+                <i class="fa-solid fa-check text-green-600"></i>
+                <span>Lorem ipsum dolor</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-check text-green-600"></i>
+                <span>Lorem ipsum dolor sit amet.
+                </span>
+              </li>
+              <li>
+                <i class="fa-solid fa-check text-green-600"></i>
+                <span>Lorem ipsum dolor </span>
+              </li>
+              <li>
+                <i class="fa-solid fa-check text-green-600"></i>
+                <span>Lorem ipsum dolor sit amet.</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-check text-green-600"></i>
+                <span>Lorem ipsum dolor sit amet.</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-check text-green-600"></i>
+                <span>Lorem ipsum dolor sit amet.</span>
+              </li>
+            </ul>
+            <!-- for butto and hyper link  -->
+            <div class="flex flex-col-reverse md:flex-row items-centerspace-x-4 space-x-4 block">
+              <button class="bg-[#2b84ea]  w-full text-white py-[14px] px-[18px] rounded-md font-sans font-bold hover:bg-blue-800 transition-all duration-200 block">Sign up now ></button>
+              <!-- hyperlink -->
+              <div class="flex self-start md:self-center items-center cursor-pointer group space-x-1">
+                <a href="#" class="font-sans font-bold text-blue-500 group-hover:text-gray-600 transition-all duration-200">Know more </a>
+                 <i class="fa-solid fa-angle-right text-blue-500 inset-y-3" ></i>
+             </div>
+            </div>
+            <img src="./images/payment-suite.png" class="max-w-[500px] absolute right-0 bottom-24 hidden md:max-w-[400px] lg:max-w-[500px] md:block lg:block"  alt="">
+        </div>
+        <!-- <img src="./images/payment-suite.png" class="max-w-[600px] absolute right-0 bottom-0 hidden md:max-w-[400px] lg:max-w-[600px] md:block lg:block"  alt=""> -->
+        <!-- lg:max-w-[600px] md:block lg:block -->
+         
+            
+      </div>
+      </div>
+      <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-14 ">
+        <!-- box1 -->
+        <div class="w-full min-h-[15rem] border-2 border-gray-400 relative cursor-pointer rounded  ">
+          <img src="./images/payment-link-icon.svg" class="bg-lightBlue500 absolute right-3 top-3 w-12 h-12 rounded-full z-[8] transition-all duration-200" alt="">
+          <!-- box shape  -->
+          <!-- box content  -->
+          <div class="">
+            <!-- text part -->
+            <div class="w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+              <h3 class="font-mullish font-bold text-deepBlueHead text-[1.375rem] leading-[1.2]">Payments Links</h3>
+              <p class="font-mullish text-gray-500 mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, rem.</p>
+            </div>
+            <!-- hyperlinks  -->
+            <div class="pl-5 py-6 pr-8">
+              <a href="#" class="font-sans font-bold text-blue-500 group-hover:text-gray-600 transition-all duration-200">Know more </a>
+                 <i class="fa-solid fa-angle-right text-blue-500 inset-y-3" ></i>
+            </div>
+          </div>
+          
+        </div>
+        <!-- box2 -->
+        <div class="w-full min-h-[15rem] border-2 border-gray-500 relative cursor-pointe rounded">
+          <img src="./images/payment-link-icon.svg" class="bg-lightBlue500 absolute right-3 top-3 w-12 h-12 rounded-full z-[8] transition-all duration-200" alt="">
+          <!-- box shape  -->
+          <!-- box content  -->
+          <div class="">
+            <!-- text part -->
+            <div class="w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+              <h3 class="font-mullish font-bold text-deepBlueHead text-[1.375rem] leading-[1.2]">Payments Links</h3>
+              <p class="font-mullish text-gray-500 mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, rem.</p>
+            </div>
+            <!-- hyperlinks  -->
+            <div class="pl-5 py-6 pr-8">
+              <a href="#" class="font-sans font-bold text-blue-500 group-hover:text-gray-600 transition-all duration-200">Know more </a>
+                 <i class="fa-solid fa-angle-right text-blue-500 inset-y-3" ></i>
+            </div>
+          </div>
+          
+        </div>
+        <!-- box3 -->
+        <div class="w-full min-h-[15rem] border-2 border-gray-500 relative cursor-pointer">
+          <img src="./images/payment-link-icon.svg" class="bg-lightBlue500 absolute right-3 top-3 w-12 h-12 rounded-full z-[8] transition-all duration-200" alt="">
+          <!-- box shape  -->
+          <!-- box content  -->
+          <div class="">
+            <!-- text part -->
+            <div class="w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+              <h3 class="font-mullish font-bold text-deepBlueHead text-[1.375rem] leading-[1.2]">Payments Links</h3>
+              <p class="font-mullish text-gray-500 mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, rem.</p>
+            </div>
+            <!-- hyperlinks  -->
+            <div class="pl-5 py-6 pr-8">
+              <a href="#" class="font-sans font-bold text-blue-500 group-hover:text-gray-600 transition-all duration-200">Know more </a>
+                 <i class="fa-solid fa-angle-right text-blue-500 inset-y-3" ></i>
+            </div>
+          </div>
+          
+        </div>
+        <!-- box4 -->
+        <div class="w-full min-h-[15rem] border-2 border-gray-500 relative cursor-pointer">
+          <img src="./images/payment-link-icon.svg" class="bg-lightBlue500 absolute right-3 top-3 w-12 h-12 rounded-full z-[8] transition-all duration-200" alt="">
+          <!-- box shape  -->
+          <!-- box content  -->
+          <div class="">
+            <!-- text part -->
+            <div class="w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+              <h3 class="font-mullish font-bold text-deepBlueHead text-[1.375rem] leading-[1.2]">Payments Links</h3>
+              <p class="font-mullish text-gray-500 mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, rem.</p>
+            </div>
+            <!-- hyperlinks  -->
+            <div class="pl-5 py-6 pr-8">
+              <a href="#" class="font-sans font-bold text-blue-500 group-hover:text-gray-600 transition-all duration-200">Know more </a>
+                 <i class="fa-solid fa-angle-right text-blue-500 inset-y-3" ></i>
+            </div>
+          </div>
+          
+        </div>
+        <!-- box5 -->
+        <div class="w-full min-h-[15rem] border-2 border-gray-500 relative cursor-pointer">
+          <img src="./images/payment-link-icon.svg" class="bg-lightBlue500 absolute right-3 top-3 w-12 h-12 rounded-full z-[8] transition-all duration-200" alt="">
+          <!-- box shape  -->
+          <!-- box content  -->
+          <div class="">
+            <!-- text part -->
+            <div class="w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+              <h3 class="font-mullish font-bold text-deepBlueHead text-[1.375rem] leading-[1.2]">Payments Links</h3>
+              <p class="font-mullish text-gray-500 mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, rem.</p>
+            </div>
+            <!-- hyperlinks  -->
+            <div class="pl-5 py-6 pr-8">
+              <a href="#" class="font-sans font-bold text-blue-500 group-hover:text-gray-600 transition-all duration-200">Know more </a>
+                 <i class="fa-solid fa-angle-right text-blue-500 inset-y-3" ></i>
+            </div>
+          </div>
+          
+        </div>
+        <!-- box6 -->
+        <div class="w-full min-h-[15rem] border-2 border-gray-500 relative cursor-pointer">
+          <img src="./images/payment-link-icon.svg" class="bg-lightBlue500 absolute right-3 top-3 w-12 h-12 rounded-full z-[8] transition-all duration-200" alt="">
+          <!-- box shape  -->
+          <!-- box content  -->
+          <div class="">
+            <!-- text part -->
+            <div class="w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+              <h3 class="font-mullish font-bold text-deepBlueHead text-[1.375rem] leading-[1.2]">Payments Links</h3>
+              <p class="font-mullish text-gray-500 mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, rem.</p>
+            </div>
+            <!-- hyperlinks  -->
+            <div class="pl-5 py-6 pr-8">
+              <a href="#" class="font-sans font-bold text-blue-500 group-hover:text-gray-600 transition-all duration-200">Know more </a>
+                 <i class="fa-solid fa-angle-right text-blue-500 inset-y-3" ></i>
+            </div>
+          </div>
+          
+        </div>
+       </div>
+      
+
+    </div>
+  </section>
+
+    <!-- feature section 2  -->
+  <section class="bg-[url(./images/feature-section-2BG.svg)] bg-cover bg-no-repeat pt-[10rem] pb-[350px] mt-14">
+    <div class="w-10/12 max-w-[1080px] mx-auto relative pt-0">
+      <h2 class="font-sans text-center text-2xl leading-[1.2] font-extrabold text-white">Explore rozer Business Banking</h2>
+      <div class="w-6 h-1 bg-green-600 mx-auto mt-4 "></div>
+      <!-- main featur box  -->
+      <div class="w-full flex flex-col relative">
+        <!-- <img src="./images/x-flame-1.png" loading="lazy" class="absolute -top-[130px] -left-[130px] w-[200px]" alt=""> -->
+        <!-- <img src="./images/x-flame-2.png" loading="lazy" class="absolute -top-[0px] -right-[170px] w-[270px]" alt=""> -->
+        <!-- content box  -->
+        <div class="w-full  rounded-md
+      relative p-10 py-4 bg-[#181c2e] z-20  mt-4 border">
+          <!-- left -->
+          <div class="flex flex-col justify-between w-full items-start h-full gap-8">
+            <h3 class="font-sans text-[28px] leading-10 font-bold max-w-[500px] text-white max-w-[500px]">
+                Manage your comapany finances with <img src="./images/razorpayX.svg" loading="lazy" width="168px" height="32px" class="inline" alt="">
+                <span class="text-green-500">Business Banking</span>
+            </h3>
+            <ul class="space-y-2">
+              <li class="font-sans flex items-center space-x-2 text-white">
+                <i class="fa-solid fa-check text-green-600"></i>
+                <span>Lorem ipsum dolor</span>
+              </li>
+              <li class="font-sans flex items-center space-x-2 text-white">
+                <i class="fa-solid fa-check text-green-600 "></i>
+                <span>Lorem ipsum dolor sit amet.
+                </span>
+              </li>
+              <li class="font-sans flex items-center space-x-2 text-white">
+                <i class="fa-solid fa-check text-green-600"></i>
+                <span>Lorem ipsum dolor </span>
+              </li>
+              <li class="font-sans flex items-center space-x-2 text-white">
+                <i class="fa-solid fa-check text-green-600"></i>
+                <span>Lorem ipsum dolor sit amet.</span>
+              </li>
+              
+              
+            </ul>
+            <!-- for butto and hyper link  -->
+            <div class="flex flex-row items-centerspace-x-4 space-x-4">
+              <button class="bg-[#2b84ea] text-white py-[14px] px-[18px] rounded-md font-sans font-bold hover:bg-blue-800 transition-all duration-200 relative flex items-center justify-start md:pr-[90px]">Sign up
+                <div class="w-10 h-[60px] bg-green-600 absolute right-6 skew-x-[20deg] flex justify-center items-center"><i class="fa-solid fa-arrow-right -skew-x-[20deg]"></i></div>
+              </button>
+              <!-- hyperlink -->
+              <div class="flex items-center cursor-pointer group space-x-1">
+              <a href="#" class="font-sans font-bold text-blue-500 group-hover:text-gray-600 transition-all duration-200">Know more </a>
+               <i class="fa-solid fa-angle-right text-blue-500 inset-y-3" ></i>
+             </div>
+            </div>
+
+          </div>
+          <img src="./images/buisness-banking.png" class="max-w-[480px] absolute right-0 bottom-0 "  alt="">
+        </div>
+        <!-- card box  -->
+        <div class="grid grid-cols-3 w-full gap-4 my-8">
+          <!-- box 1  -->
+          <div class="w-full min-h-[13rem] border-2 border-gray-400 relative cursor-pointer rounded">
+            <img src="./images/current-icon.svg" class="bg-lightBlue500 absolute right-3 top-3 w-12 h-12 rounded-full z-[8] transition-all duration-200" alt="">
+            <!-- box shape  -->
+            <!-- box content  -->
+            <div>
+              <!-- text part -->
+              <div class="w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+                <h3 class="font-mullish font-bold text-white text-[1.375rem] leading-[1.2]">Current Account</h3>
+                <p class="font-mullish text-gray-500 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,Lorem ipsum dolor sit.</p>
+              </div>
+              <!-- hyperlinks  -->
+              <div class="pl-5 py-6 pr-8">
+                <a href="#" class="font-sans font-bold text-blue-500 group-hover:text-gray-600 transition-all duration-200">Know more </a>
+                   <i class="fa-solid fa-angle-right text-blue-500 inset-y-3" ></i>
+              </div>
+            </div>
+            
+          </div>
+          <!-- box 2  -->
+          <div class="w-full min-h-[15rem] border-2 border-gray-400 relative cursor-pointer rounded  ">
+            <img src="./images/payment-link-icon.svg" class="bg-lightBlue500 absolute right-3 top-3 w-12 h-12 rounded-full z-[8] transition-all duration-200" alt="">
+            <!-- box shape  -->
+            <!-- box content  -->
+            <div class="">
+              <!-- text part -->
+              <div class="w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+                <h3 class="font-mullish font-bold text-white text-[1.375rem] leading-[1.2]">Business account</h3>
+                <p class="font-mullish text-gray-500 mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, rem.</p>
+              </div>
+              <!-- hyperlinks  -->
+              <div class="pl-5 py-6 pr-8">
+                <a href="#" class="font-sans font-bold text-blue-500 group-hover:text-gray-600 transition-all duration-200">Know more </a>
+                   <i class="fa-solid fa-angle-right text-blue-500 inset-y-3" ></i>
+              </div>
+            </div>
+            
+          </div>
+          <!-- box 3 -->
+          <div class="w-full min-h-[15rem] border-2 border-gray-400 relative cursor-pointer rounded  ">
+            <img src="./images/payment-link-icon.svg" class="bg-lightBlue500 absolute right-3 top-3 w-12 h-12 rounded-full z-[8] transition-all duration-200" alt="">
+            <!-- box shape  -->
+            <!-- box content  -->
+            <div class="">
+              <!-- text part -->
+              <div class="w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+                <h3 class="font-mullish font-bold text-white text-[1.375rem] leading-[1.2]">Payments Links</h3>
+                <p class="font-mullish text-gray-500 mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, rem.</p>
+              </div>
+              <!-- hyperlinks  -->
+              <div class="pl-5 py-6 pr-8">
+                <a href="#" class="font-sans font-bold text-blue-500 group-hover:text-gray-600 transition-all duration-200">Know more </a>
+                   <i class="fa-solid fa-angle-right text-blue-500 inset-y-3" ></i>
+              </div>
+            </div>
+            
+          </div>
+
+        </div>
+        <!-- demo box  -->
+        <div class="w-full flex flex-row items-center justify-evenly border rounded p-4 mb-24 gap-y-6 relative ">
+          <p class="font-mullish text-white text-xl">Check out the live demo to learn how razorpay works
+            <span class="font-bold">No Sign-up required</span>
+          </p>
+          <button class="bg-[#2b84ea] text-white py-[14px] px-[18px] rounded-md font-sans font-bold hover:bg-blue-800 transition-all duration-200 relative flex items-center justify-start md:pr-[90px]">Check out the demo
+            <div class="w-12 h-[60px] bg-green-600 absolute right-6  skew-x-[20deg] flex justify-center items-center"><i class="fa-solid fa-arrow-right -skew-x-[20deg]"></i></div>
+          </button>
+        </div>
+         
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- new features  -->
+  <section class="bg-white relative">
+    <div class="w-10/12 max-w-[1080px] mx-auto relative pt-2">
+      <!-- <img src="./images/feature-section1-dottedrows.png" class="absolute w-[233px] left-[750px] -top-[6rem] -z-[10]" alt=""> -->
+      <img src="./images/feature-section1-dottedrows.png" class="absolute w-[233px] right-[480px] -top-[6rem] -z-[10]" alt="">
+      <div class="w-full grid grid-cols-3 gap-y-10 gap-x-4 relative z-[10]">
+        <!-- item 1 -->
+        <div class="relative flex items-center">
+          <h2 class="text-deepBlue font-mullish font-extrabold text-2xl leading-[3.375rem]">New in the <br>
+          <span class="text-lightBlue font-mullish font-extrabold text-2xl">
+               Razer Pay
+          </span> <br>
+           Product suit </h2>
+        </div>
+        <!-- card 1 -->
+        <div class="p-6 bg-[url(/images/instant-settlement-bg.svg)] max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200 hover:bg-[url(/images/instant-settlement-bghover.svg)] border hover:shadow-2xl rounded">
+          <img src="./images/razorpayXicon.svg" class="w-10 h-10" alt="">
+          <h3 class="font-mullish font-bold text-lg pt-4">Coraporate card</h3>
+          <p class="font-mullish py-3 text-grayText leading-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, eius? Lorem ipsum dolor sit amet consectetur.</p>
+          <div class="flex flex-row cursor-pointer items-center group">
+            <a href="" class="font-mullish font-bold  text-lightBlue500 group-hover:text-lightBlue transition-all duration-200">Know more</a>
+            <i class="fa-solid fa-angle-right text-blue-500 inset-y-3" ></i>
+          </div>
+        </div>
+        <!-- card 2  -->
+        <div class="p-6 bg-[url(/images/instant-settlement-bg.svg)] max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200 hover:bg-[url(/images/instant-settlement-bghover.svg)] border hover:shadow-2xl rounded">
+          <img src="./images/razorpayXicon.svg" class="w-10 h-10" alt="">
+          <h3 class="font-mullish font-bold text-lg pt-4">Coraporate card</h3>
+          <p class="font-mullish py-3 text-grayText leading-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, eius? Lorem ipsum dolor sit amet consectetur.</p>
+          <div class="flex flex-row cursor-pointer items-center group">
+            <a href="" class="font-mullish font-bold  text-lightBlue500 group-hover:text-lightBlue transition-all duration-200">Know more</a>
+            <i class="fa-solid fa-angle-right text-blue-500 inset-y-3" ></i>
+          </div>
+        </div>
+
+        <!-- card 3  -->
+        <div class="p-6 bg-[url(/images/instant-settlement-bg.svg)] max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200 hover:bg-[url(/images/instant-settlement-bghover.svg)] border hover:shadow-2xl rounded">
+          <img src="./images/razorpayXicon.svg" class="w-10 h-10" alt="">
+          <h3 class="font-mullish font-bold text-lg pt-4">Coraporate card</h3>
+          <p class="font-mullish py-3 text-grayText leading-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, eius? Lorem ipsum dolor sit amet consectetur.</p>
+          <div class="flex flex-row cursor-pointer items-center group">
+            <a href="" class="font-mullish font-bold  text-lightBlue500 group-hover:text-lightBlue transition-all duration-200">Know more</a>
+            <i class="fa-solid fa-angle-right text-blue-500 inset-y-3" ></i>
+          </div>
+        </div>
+        <!-- card 4  -->
+        <div class="p-6 bg-[url(/images/instant-settlement-bg.svg)] max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200 hover:bg-[url(/images/instant-settlement-bghover.svg)] border hover:shadow-2xl rounded">
+          <img src="./images/razorpayXicon.svg" class="w-10 h-10" alt="">
+          <h3 class="font-mullish font-bold text-lg pt-4">Coraporate card</h3>
+          <p class="font-mullish py-3 text-grayText leading-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, eius? Lorem ipsum dolor sit amet consectetur.</p>
+          <div class="flex flex-row cursor-pointer items-center group">
+            <a href="" class="font-mullish font-bold  text-lightBlue500 group-hover:text-lightBlue transition-all duration-200">Know more</a>
+            <i class="fa-solid fa-angle-right text-blue-500 inset-y-3" ></i>
+          </div>
+        </div>
+        <!-- card 5 -->
+        <div class="p-6 bg-[url(/images/instant-settlement-bg.svg)] max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200 hover:bg-[url(/images/instant-settlement-bghover.svg)] border hover:shadow-2xl rounded">
+          <img src="./images/razorpayXicon.svg" class="w-10 h-10" alt="">
+          <h3 class="font-mullish font-bold text-lg pt-4">Coraporate card</h3>
+          <p class="font-mullish py-3 text-grayText leading-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, eius? Lorem ipsum dolor sit amet consectetur.</p>
+          <div class="flex flex-row cursor-pointer items-center group">
+            <a href="" class="font-mullish font-bold  text-lightBlue500 group-hover:text-lightBlue transition-all duration-200">Know more</a>
+            <i class="fa-solid fa-angle-right text-blue-500 inset-y-3" ></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- core featur section -->
+  <section class="w-full bg-[url(/images/core-features-sectionBg.svg)] bg-no-repeat bg-cover mt-11 relative  pt-[10rem] pb-[10rem]">
+    <div class="w-10/12 max-w-[1080px] mx-auto relative pt-2">
+      <h2 class="font-mullish font-bold text-2xl text-center  text-white">Features</h2>
+      <div class="w-6 h-1 bg-green-600 mx-auto mt-4 "></div>
+      <p class="text-white font-mullish items-center text-center max-w-[550px] mx-auto">Lorem ipsum dolor sit amet, r sit amet. amet consequatur, reprehenderit corrupti alias culpa nihil maiores veniam.</p>
+      <!-- grid  -->
+      <div class="grid grid-cols-4 mt-8 gap-[2rem]">
+        <!-- card 1  -->
+        <div>
+          <img src="./images/instant-activation-icon.svg" alt="">
+          <h3 class="font-mullish font-bold text-white text-lg">Instant Activation</h3>
+          <p class="text-white font-mullish opacity-80">Lorem ipsum dolor sit amet consectetur Lorem  adipisicing elit. Vero, excepturi!</p>
+        </div>
+        <!-- card 2  -->
+        <div>
+          <img src="./images/instant-activation-icon.svg" alt="">
+          <h3 class="font-mullish font-bold text-white text-lg">Instant Activation</h3>
+          <p class="text-white font-mullish opacity-80">Lorem ipsum dolor sit amet consectetur  sit amet. adipisicing elit. Vero, excepturi!</p>
+        </div>
+        <!-- card 3  -->
+        <div>
+          <img src="./images/instant-activation-icon.svg" alt="">
+          <h3 class="font-mullish font-bold text-white text-lg">Instant Activation</h3>
+          <p class="text-white font-mullish opacity-80">Lorem ipsum dolor sit amet consectetur Loreadipisicing elit. Vero, excepturi!</p>
+        </div>
+        <!-- card 4  -->
+        <div>
+          <img src="./images/instant-activation-icon.svg" alt="">
+          <h3 class="font-mullish font-bold text-white text-lg">Instant Activation</h3>
+          <p class="text-white font-mullish opacity-80">Lorem ipsum dolor sit amet consectetur Lo adipisicing elit. Vero, excepturi!</p>
+        </div>
+        <!-- card 5  -->
+        <div>
+          <img src="./images/instant-activation-icon.svg" alt="">
+          <h3 class="font-mullish font-bold text-white text-lg">Instant Activation</h3>
+          <p class="text-white font-mullish opacity-80">Lorem ipsum dolor sit amet consectetur Lorem  adipisicing elit. Vero, excepturi!</p>
+        </div>
+        <!-- card 6  -->
+        <div>
+          <img src="./images/instant-activation-icon.svg" alt="">
+          <h3 class="font-mullish font-bold text-white text-lg">Instant Activation</h3>
+          <p class="text-white font-mullish opacity-80">Lorem ipsum dolor sit amet consectetur Loremt. adipisicing elit. Vero, excepturi!</p>
+        </div>
+        <!-- card 7  -->
+        <div>
+          <img src="./images/instant-activation-icon.svg" alt="">
+          <h3 class="font-mullish font-bold text-white text-lg">Instant Activation</h3>
+          <p class="text-white font-mullish opacity-80">Lorem ipsum dolor sit amet consectetur Loremt. adipisicing elit. Vero, excepturi!</p>
+        </div>
+        <!-- card 8  -->
+        <div>
+          <img src="./images/instant-activation-icon.svg" alt="">
+          <h3 class="font-mullish font-bold text-white text-lg">Instant Activation</h3>
+          <p class="text-white font-mullish opacity-80">Lorem ipsum dolor sit amet consectetur Loremt. adipisicing elit. Vero, excepturi!</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+    <!-- join razorpay section  -->
+  <section class="w-full relative -mt-[5rem] -z-[100]  pb-10 bg-[#f5f8fe]">
+    <div class="w-10/12 max-w-[1080px] mx-auto relative pt-4 flex flex-row">
+      <!-- left part  -->
+      <div class="flex flex-col justify-center max-w-[calc(100%-500px)]">
+        <h2 class="font-mullish font-bold text-2xl text-deepBlue">join the 50,00,000+ businesses using razorpay</h2>
+        <div class="w-6 h-1 bg-green-600 mt-3 "></div> <br>
+        <p class="font-mullish opacity-80">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, autem! consectetur, adipisicing elit. Ex, repellat!</p> <br>
+        <p class="font-mullish opacity-80">Lorem ipsum dolor sit Lorem ipsum dolor sit amet. </p>
+      </div>
+      <!-- rgiht part  -->
+      
+       <div class="h-[500px] w-[500px] relative overflow-y-hidden">
+        <div style="background: linear-gradient(180deg, #f4f8ff, #fff0)" class="absolute w-full h-[150px] top-0 z-50"></div>
+        <img src="./images/comanies.png" class="absolute object-cover h-auto companiesList" width="500px" alt="">
+        <div style="background: linear-gradient(0deg, #f4f8ff, #fff0)" class="absolute w-full h-[150px] bottom-0 z-50"></div>
+       </div>
+    </div>
+
+  </section>
+
+  <!-- testimonel section  -->
+  <section class="w-full relative">
+    <div class="w-10/12 max-w-[1080px] mx-auto relative pt-14">
+      <img src="./images/feature-section1-dottedrows.png" class="absolute w-[200px] top-[4rem] left-[2rem] -z-[10]" alt="">
+      <h2 class="font-mullish text-deepBlue mx-auto text-center text-2xl font-bold">An Experience <br>
+        People Love to Talk About
+      </h2>
+      <div class="w-6 h-1 bg-green-600 mt-3 mx-auto"></div>
+       
+    
+      <!-- left button  -->
+   
+      
+      
+      <!-- right button --> 
+      
+      
+      <!-- main content  -->
+      <div class="flex flex-row mt-16 justify-between relative">
+        <button class="w-[80px] h-[80px] bg-[#f4f8ff] rounded-full absolute left-0 mt-24 flex justify-center items-center">
+          <div class="w-[65%] h-[65%] bg-[#f4f8ff] rounded-full flex justify-center items-center mix-blend-multiply">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+        </button>
+        <div class="flex flex-row max-w-[850px] items-center gap-40  mx-auto ">
+           <!-- left image  -->
+          <img src="./images/testimonial.jpg" loading="lazy" class="rounded-xl" height="320px" width="320px" alt="">
+           <!-- right part  -->
+          <div class="max-w-[300px]">
+            <img src="./images/quotes.svg" width="35px" height="40px" class="-mb-2" alt="">
+            <p class="font-mullish text-3xl font-extralight">Rediment Closed wallet Solution For Quick Refunds</p>
+            <a href="#" class="text-grayText italic underline">Learn More</a>
+            <h3 class="font-mullish font-extrabold text-2xl">Lorem ipsum</h3>
+            <p class="font-mullish font-medium">CEO.XYZ Engineering Company</p>
+           <img src="./images/fake-company-logo.png" width="80px" height="40px" alt="">
+          </div>
+        </div>
+        <button class="w-[80px] h-[80px] bg-[#f4f8ff] rounded-full absolute right-0 mt-24  flex justify-center items-center">
+          <div class="w-[65%] h-[65%] bg-[#f4f8ff] rounded-full flex justify-center items-center mix-blend-multiply">
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </button>
+      </div>
+      
+     <!-- 6 dot wlala  -->
+      <div class="flex flex-row mx-auto space-x-1 justify-center mt-12">
+        <div class="h-[10px] w-[10px] bg-gray-400 rounded-full"></div>
+        <div class="h-[10px] w-[10px] bg-lightBlue rounded-full"></div>
+        <div class="h-[10px] w-[10px] bg-gray-400 rounded-full"></div>
+        <div class="h-[10px] w-[10px] bg-gray-400 rounded-full"></div>
+        <div class="h-[10px] w-[10px] bg-gray-400 rounded-full"></div>
+        <div class="h-[10px] w-[10px] bg-gray-400 rounded-full"></div>
+      </div>
+    </div>
+  </section>
+
+    <!-- cta  -->
+  <section class="bg-[url(/images/CTABg.svg)] w-full h-full bg-no-repeat bg-cover relative mt-14 min-h-[490px]">
+    <!-- main contant box  -->
+    <div class="w-10/12 max-w-[1080px] mx-auto relative flex flex-row items-center justify-between space-x-20 pt-20">
+      <!-- left part  -->
+      <div class="flex flex-col gap-4  mt-8">
+        <h2 class="font-mullish text-white text-2xl font-bold">Supercharge your business with razoerpay </h2> 
+        <div class="w-6 h-1 bg-greenLight"></div> 
+        <p class="font-mullish text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi,<br> Lorem ipsum dolor sit amet. explicabo.</p> 
+        <ul class="flex flex-row gap-8 flex-wrap  text-white ">
+          <li class="font-mullish flex flex-row items-center">
+            <i class="fa-solid fa-check text-green-600"></i> <span>Quick onwording</span>
+          </li>
+          <li class="font-mullish flex flex-row items-center">
+            <i class="fa-solid fa-check text-green-600"></i> <span>Quick onwording</span>
+          </li>
+          <li class="font-mullish flex flex-row items-center">
+            <i class="fa-solid fa-check text-green-600"></i> <span>Lorem, ipsum dolor.</span>
+          </li>
+          <li class="font-mullish flex flex-row items-center">
+            <i class="fa-solid fa-check text-green-600"></i> <span>24*7 support</span>
+          </li>
+        </ul>
+        <button class="min-w-[70px] font-mullish text-sm font-bold bg-white text-lightBlue rounded-sm items-center hover:text-lightBlue500 transition-all duration-200 flex py-3 px-4 place-self-start">
+           sign up <i class="fa-sharp fa-solid fa-arrow-right"></i>
+        </button>
+
+      </div>
+      <!-- right part  -->
+      <img src="./images/ctaImg.svg" width="240px" height="282px" class="mt-10" alt="">
+      
+    </div>
+  </section>
+
+  <!-- footer  -->
+  <footer class="w-full relative">
+    <div class="w-10/12 max-w-[1080px] mx-auto relative pt-14 flex flex-row gap-10">
+      <div class="w-[300px] space-y-2">
+        <img src="./images/logo-dark.svg" loading="lazy" width="120px" height="24px" alt="">
+        <p class="text-grayText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae odio molestias aut dolore, aliquam dolores dolorum sunt ducimus provident. Quidem.</p>
+        <p class="text-grayText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae illo quia quo dolor reprehenderit laborum impedit? Sequi expedita enim vel illum a minima doloremque voluptatem!</p>
+        <p class="text-grayText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, laborum debitis magni alias atque fugit aliquid repudiandae soluta doloremque necessitatibus tenetur ratione accusantium?</p>
+        <p class="text-grayText">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint atque maiores deleniti quo excepturi adipisci illo officiis ea amet enim!</p>
+        <h2 class="font-mullish text-black font-bold text-xl">SUBSCRIBE TO OUR NEWSLETTER</h2>
+        <div class="w-[250px] h-8 min-w-[70px] font-mullish text-sm  bg-white rounded-sm items-center flex border  justify-between pl-2 pr-2 rounded-sm">
+          <p class="text-grayText">your email address</p>
+          <span class="text-lightBlue flex flex-row items-center">Subscribe <i class="fa-sharp fa-solid fa-arrow-right"></i></span>
+        </div>
+        <div>
+          <img src="" alt="">
+          <img src="" alt="">
+        </div>
+      </div>
+      <div class="w-[300px] space-y-2">
+        <div class="">
+          <h2 class="font-mullish font-bold text-black ">BANKING PLUS</h2>
+          <div class="space-y-2 font-mullish text-lightBlue500 font-bold">
+            <h3 >Lorem, ipsum.</h3>
+            <h3>Lorem, ipsum.</h3>
+            <h3>Lorem, ipsum.</h3>
+            <h3>Lorem, ipsum.</h3>
+            <h3>Lorem, ipsum. <button class="w-1416 bg-green-500 text-white rounded-sm">NEW</button></h3>
+          </div>
+        </div>
+        <div class="">
+          <h2 class="font-mullish font-bold text-black mt-3">BANKING PLUS</h2>
+          <div class="space-y-2 font-mullish text-lightBlue500 font-bold">
+            <h3 >Lorem, ipsum.</h3>
+            <h3>Lorem, ipsum.</h3>
+            <h3>Lorem, ipsum.</h3>
+            <h3>Lorem, ipsum.</h3>
+            <h3>Lorem, ipsum. <button class="w-1416 bg-green-500 text-white rounded-sm">NEW</button></h3>
+          </div>
+        </div>
+        <div class="">
+          <h2 class="font-mullish font-bold text-black mt-3">BANKING PLUS</h2>
+          <div class="space-y-2 font-mullish text-lightBlue500 font-bold">
+            <h3 >Lorem, ipsum.</h3>
+            <h3>Lorem, ipsum.</h3>
+          
+          </div>
+        </div>
+        <div class="">
+          <h2 class="font-mullish font-bold text-black ">BANKING PLUS</h2>
+          <div class="space-y-2 font-mullish text-lightBlue500 font-bold">
+            <h3 >Lorem,</h3>
+            <h3>Lorem, .</h3>
+            <h3>Lorem, .</h3>
+            <h3>Lorem, </h3>
+            <h3>Lorem,  </h3>
+            <h3>Lorem, .</h3>
+            <h3>Lorem, </h3>
+            <h3>Lorem,  </h3>
+          </div>
+        </div>
+      </div>
+      <div class="w-[300px] space-y-2">
+        <div class="">
+          <h2 class="font-mullish font-bold text-black ">BANKING PLUS</h2>
+          <div class="space-y-2 font-mullish text-lightBlue500 font-bold">
+            <h3 >Lorem, ipsum.</h3>
+            <h3>Lorem, ipsum.</h3>
+            <h3>Lorem, ipsum.</h3>
+            <h3>Lorem, ipsum.</h3>
+            <h3>Lorem, ipsum. <button class="w-1416 bg-green-500 text-white rounded-sm">NEW</button></h3>
+          </div>
+        </div>
+        <div class="">
+          <h2 class="font-mullish font-bold text-black mt-3">BANKING PLUS</h2>
+          <div class="space-y-2 font-mullish text-lightBlue500 font-bold">
+            <h3 >Lorem, ipsum.</h3>
+            <h3>Lorem, ipsum.</h3>
+            <h3>Lorem, ipsum.</h3>
+            <h3>Lorem, ipsum.</h3>
+            <h3>Lorem, ipsum. <button class="w-1416 bg-green-500 text-white rounded-sm">NEW</button></h3>
+          </div>
+        </div>
+        <div class="">
+          <h2 class="font-mullish font-bold text-black mt-3">BANKING PLUS</h2>
+          <div class="space-y-2 font-mullish text-lightBlue500 font-bold">
+            <h3 >Lorem, ipsum.</h3>
+            <h3>Lorem, ipsum.</h3>
+          
+          </div>
+        </div>
+        <div class="">
+          <h2 class="font-mullish font-bold text-black ">BANKING PLUS</h2>
+          <div class="space-y-2 font-mullish text-lightBlue500 font-bold">
+            <h3 >Lorem,</h3>
+            <h3>Lorem, .</h3>
+            <h3>Lorem, .</h3>
+            <h3>Lorem, </h3>
+            <h3>Lorem,  </h3>
+            <h3>Lorem, .</h3>
+            <h3>Lorem, </h3>
+            <h3>Lorem,  </h3>
+          </div>
+        </div>
+      </div>
+      <div class="w-[300px] space-y-2">
+        <div class="">
+          <h2 class="font-mullish font-bold text-black ">BANKING PLUS</h2>
+          <div class="space-y-2 font-mullish text-lightBlue500 font-bold">
+            <h3 >Lorem, ipsum.</h3>
+            <h3>Lorem, ipsum.</h3>
+            <h3>Lorem, ipsum.</h3>
+            <h3>Lorem, ipsum.</h3>
+            <h3>Lorem, ipsum. <button class="w-1416 bg-green-500 text-white rounded-sm">NEW</button></h3>
+          </div>
+        </div>
+        <div class="">
+          <h2 class="font-mullish font-bold text-black mt-3">BANKING PLUS</h2>
+          <div class="space-y-2 font-mullish text-lightBlue500 font-bold">
+            <h3 >Lorem, ipsum.</h3>
+            <h3>Lorem, ipsum.</h3>
+            
+          </div>
+        </div>
+        <div class="">
+          <h2 class="font-mullish font-bold text-black mt-3">FIND US ONLINES</h2>
+          <div class="flex flex-row space-x-2">
+            <img src="./images/facebook-icon.svg" width="24px" height="24px" alt="">
+            <img src="./images/twitter-icon.svg" width="24px" height="24px" alt="">
+            <img src="./images/instagram-icon.svg" width="24px" height="24px" alt="">
+            <img src="./images/github-icon.svg" width="24px" height="24px" alt="">
+            <img src="./images/linkedin-icon.svg" width="24px" height="24px" alt="">
+          </div>
+        </div>
+        <div class="mt-3">
+          <h2 class="font-mullish font-bold text-black">REGD. OFFICE ADDRESS</h2>
+          <div class="">
+            <p>Razorpay software primate limited,<br> 1st floor, Sjr Cyber,<br>22 Lakshar House Road, Adugodi <br>Bengloru,500100 
+              <br> Karnataka,India <br>CIN:u777284759372</p>
+          </div>
+          <div class="font-mullish mt-6">
+            <p class="text-sm">Razorpay 2022</p>
+            <p class="text-sm">All Right Reserved</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+</body>
+</html>
